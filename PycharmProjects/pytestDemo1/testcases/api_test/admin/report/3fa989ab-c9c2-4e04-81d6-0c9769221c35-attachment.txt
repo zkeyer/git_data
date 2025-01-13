@@ -1,0 +1,7 @@
+INFO     log:conftest.py:29 ******************************
+INFO     log:conftest.py:30 前置步骤开始 ==>> 清理数据
+INFO     log:conftest.py:48 添加用户操作：清理用户--准备添加新用户
+INFO     log:conftest.py:49 执行前置SQL：DELETE FROM hospital.sys_user WHERE user_name = 'aotu_test'
+INFO     log:conftest.py:35 后置步骤开始 ==>> 清理数据
+INFO     log:conftest.py:53 添加用户操作：删除添加的用户
+INFO     log:conftest.py:54 执行后置SQL：DELETE FROM hospital.sys_user WHERE user_name = 'aotu_test'

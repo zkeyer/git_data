@@ -1,0 +1,40 @@
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "username": "admin",
+    "password": "admin123",
+    "uuid": "3f580c31d49c4f8cab1636187cc50157"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:conftest.py:29 ******************************
+INFO     log:conftest.py:30 前置步骤开始 ==>> 清理数据
+INFO     log:conftest.py:48 添加用户操作：清理用户--准备添加新用户
+INFO     log:conftest.py:49 执行前置SQL：DELETE FROM hospital.sys_user WHERE user_name = 'aotu_test'
+INFO     log:test_02_add_user.py:26 -------------开始执行用例-------------
+INFO     log:test_02_add_user.py:10 步骤1 ==>> 新增用户 ==>> 自动化添加测试用户, aotu_test, 123456
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/system/user
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ4NWE0YWEyLThiZWUtNGFiNy04YWMzLWE5ZDIxMDAzZWJkZSJ9.ps9FaL9-s_mqaweCTWos1XO_Gd7t1GySDTI5TRF1XZLpjV-9xd6JjfuFPMd7lG5IN9zcb-y4AX_ZiCf-QX8JsA",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Cookie": "sidebarStatus=1; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ4NWE0YWEyLThiZWUtNGFiNy04YWMzLWE5ZDIxMDAzZWJkZSJ9.ps9FaL9-s_mqaweCTWos1XO_Gd7t1GySDTI5TRF1XZLpjV-9xd6JjfuFPMd7lG5IN9zcb-y4AX_ZiCf-QX8JsA"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "nickName": "自动化添加测试用户",
+    "userName": "aotu_test",
+    "password": "123456"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:user.py:224 登录用户 ==>> 返回结果 ==>> {'msg': '操作成功', 'code': 200}
+INFO     log:conftest.py:35 后置步骤开始 ==>> 清理数据
+INFO     log:conftest.py:53 添加用户操作：删除添加的用户
+INFO     log:conftest.py:54 执行后置SQL：DELETE FROM hospital.sys_user WHERE user_name = 'aotu_test'

@@ -1,0 +1,1 @@
+{"name": "test_user_login", "status": "skipped", "description": "该用例是针对获取admin用户登陆时接口的测试", "start": 1736680755985, "stop": 1736680755985, "uuid": "7aa48fc0-257b-4dd4-b665-e0cadc34f2b2", "testCaseId": "90016fcc2849db7f62231f0e04fcd3ae", "fullName": "testcases.api_test.admin.test_04_testadmin.Test_admin_User_login#test_user_login"}

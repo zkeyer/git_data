@@ -1,0 +1,48 @@
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "username": "admin",
+    "password": "admin123",
+    "uuid": "3f580c31d49c4f8cab1636187cc50157"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:test_03_get_user_info.py:27 *************** 开始执行用例 ***************
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/system/user
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwNDQ0ODYxLTE0ZmQtNDczZS05N2E1LTVjMGQxZmViMDdmYSJ9.UGTX-SN2VYaEYOF3-NWgYU9eq2fZKGekMKQVczSzZ6RkmSqiK_kgpUbIDeOPjTo2B_EttqhCE9cAbQulq16e2g",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Cookie": "sidebarStatus=1; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwNDQ0ODYxLTE0ZmQtNDczZS05N2E1LTVjMGQxZmViMDdmYSJ9.UGTX-SN2VYaEYOF3-NWgYU9eq2fZKGekMKQVczSzZ6RkmSqiK_kgpUbIDeOPjTo2B_EttqhCE9cAbQulq16e2g"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "nickName": "查看新增的用户",
+    "userName": "get_user_info",
+    "password": "123456"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:user.py:224 登录用户 ==>> 返回结果 ==>> {'msg': '操作成功', 'code': 200}
+INFO     log:test_03_get_user_info.py:12 步骤1 ==>> 新增用户 ==>> 查看新增的用户, get_user_info, 123456
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "username": "查看新增的用户",
+    "password": "get_user_info",
+    "uuid": "123456"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:user.py:194 登录用户 ==>> 返回结果 ==>> {'msg': '登录用户：查看新增的用户 不存在', 'code': 500}

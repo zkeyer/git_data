@@ -1,0 +1,16 @@
+[32mINFO    [0m log:test_03_login.py:27 *************** 开始执行用例 ***************
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/login
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> POST
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> {
+    "username": "wintest",
+    "password": "123456"
+}
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null
+[32mINFO    [0m log:user.py:126 登录用户 ==>> 返回结果 ==>> {"msg":"JSON parse error: Unrecognized token 'username': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'username': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 10]","code":500}
+[32mINFO    [0m log:test_03_login.py:10 步骤1 ==>> 登录用户：wintest

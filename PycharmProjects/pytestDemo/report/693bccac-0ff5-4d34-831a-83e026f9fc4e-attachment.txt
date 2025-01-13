@@ -1,0 +1,14 @@
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/login
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> POST
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> {
+    "username": "admin",
+    "password": "admin123",
+    "uuid": "dc5d385c6463466c9de6609cfc133557"
+}
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null

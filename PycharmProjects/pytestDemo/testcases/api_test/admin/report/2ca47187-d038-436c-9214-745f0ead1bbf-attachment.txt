@@ -1,0 +1,46 @@
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/login
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "username": "admin",
+    "password": "admin123",
+    "uuid": "3f580c31d49c4f8cab1636187cc50157"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:test_03_get_user_info.py:27 *************** 开始执行用例 ***************
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/system/user
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyN2UxNTMxLWE2MTQtNDkxNy05NjVkLTlhZmE0NTZjOTAxOSJ9.NrYqQQ5aDlwVhpIbRaOjtyOPvrF6_S01Nj-FlxT8wH7zWw0jllNYYTEtBL0YAwQye_plQT0nr7tLsgTmPS39mQ",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Cookie": "sidebarStatus=1; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyN2UxNTMxLWE2MTQtNDkxNy05NjVkLTlhZmE0NTZjOTAxOSJ9.NrYqQQ5aDlwVhpIbRaOjtyOPvrF6_S01Nj-FlxT8wH7zWw0jllNYYTEtBL0YAwQye_plQT0nr7tLsgTmPS39mQ"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "nickName": "查看新增的用户",
+    "userName": "get_user_info",
+    "password": "123456"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:user.py:224 登录用户 ==>> 返回结果 ==>> {'msg': "新增用户'get_user_info'失败，登录账号已存在", 'code': 500}
+INFO     log:test_03_get_user_info.py:12 步骤1 ==>> 新增用户 ==>> 查看新增的用户, get_user_info, 123456
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/system/user/list?pageNum=1&pageSize=10
+INFO     log:rest_client.py:52 接口请求方式 ==>> GET
+INFO     log:rest_client.py:54 接口请求头 ==>> {
+    "authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyN2UxNTMxLWE2MTQtNDkxNy05NjVkLTlhZmE0NTZjOTAxOSJ9.NrYqQQ5aDlwVhpIbRaOjtyOPvrF6_S01Nj-FlxT8wH7zWw0jllNYYTEtBL0YAwQye_plQT0nr7tLsgTmPS39mQ",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Cookie": "sidebarStatus=1; Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQyN2UxNTMxLWE2MTQtNDkxNy05NjVkLTlhZmE0NTZjOTAxOSJ9.NrYqQQ5aDlwVhpIbRaOjtyOPvrF6_S01Nj-FlxT8wH7zWw0jllNYYTEtBL0YAwQye_plQT0nr7tLsgTmPS39mQ"
+}
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> null
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:user.py:251 登录用户 ==>> 返回结果 ==>> {'total': 4, 'rows': [{'searchValue': None, 'createBy': 'admin', 'createTime': '2022-09-04 19:51:36', 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': '管理员', 'params': {}, 'userId': 1, 'deptId': 103, 'userName': 'admin', 'nickName': '若依', 'email': 'ry@163.com', 'phonenumber': '15888888888', 'sex': '1', 'avatar': '', 'salt': None, 'status': '0', 'delFlag': '0', 'loginIp': '124.228.123.184', 'loginDate': '2025-01-13T11:04:02.000+08:00', 'dept': {'searchValue': None, 'createBy': None, 'createTime': None, 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': None, 'params': {}, 'deptId': 103, 'parentId': None, 'ancestors': None, 'deptName': '研发部门', 'orderNum': None, 'leader': '若依', 'phone': None, 'email': None, 'status': None, 'delFlag': None, 'parentName': None, 'children': []}, 'roles': [], 'roleIds': None, 'postIds': None, 'roleId': None, 'admin': True}, {'searchValue': None, 'createBy': 'admin', 'createTime': '2022-09-04 19:51:36', 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': '测试员', 'params': {}, 'userId': 2, 'deptId': 105, 'userName': 'ry', 'nickName': '若依', 'email': 'ry@qq.com', 'phonenumber': '15666666666', 'sex': '1', 'avatar': '', 'salt': None, 'status': '0', 'delFlag': '0', 'loginIp': '127.0.0.1', 'loginDate': '2022-09-05T00:40:15.000+08:00', 'dept': {'searchValue': None, 'createBy': None, 'createTime': None, 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': None, 'params': {}, 'deptId': 105, 'parentId': None, 'ancestors': None, 'deptName': '测试部门', 'orderNum': None, 'leader': '若依', 'phone': None, 'email': None, 'status': None, 'delFlag': None, 'parentName': None, 'children': []}, 'roles': [], 'roleIds': None, 'postIds': None, 'roleId': None, 'admin': False}, {'searchValue': None, 'createBy': 'admin', 'createTime': '2024-12-23 11:04:35', 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': '111', 'params': {}, 'userId': 100, 'deptId': 100, 'userName': 'zkey', 'nickName': '淡胆', 'email': '', 'phonenumber': '13722222226', 'sex': '0', 'avatar': '', 'salt': None, 'status': '0', 'delFlag': '0', 'loginIp': '119.123.135.122', 'loginDate': '2024-12-23T11:04:56.000+08:00', 'dept': {'searchValue': None, 'createBy': None, 'createTime': None, 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': None, 'params': {}, 'deptId': 100, 'parentId': None, 'ancestors': None, 'deptName': 'xx医院', 'orderNum': None, 'leader': '李院长', 'phone': None, 'email': None, 'status': None, 'delFlag': None, 'parentName': None, 'children': []}, 'roles': [], 'roleIds': None, 'postIds': None, 'roleId': None, 'admin': False}, {'searchValue': None, 'createBy': 'admin', 'createTime': '2025-01-12 22:40:39', 'deleted': None, 'updateBy': None, 'updateTime': None, 'remark': None, 'params': {}, 'userId': 145, 'deptId': None, 'userName': 'get_user_info', 'nickName': '查看新增的用户', 'email': '', 'phonenumber': '', 'sex': '0', 'avatar': '', 'salt': None, 'status': '0', 'delFlag': '0', 'loginIp': '', 'loginDate': None, 'dept': None, 'roles': [], 'roleIds': None, 'postIds': None, 'roleId': None, 'admin': False}], 'code': 200, 'msg': '查询成功'}

@@ -1,0 +1,14 @@
+[2024-12-31 17:57:15,868][rest_client.py 51][INFO]: 接口请求地址 ==>> http://8.140.204.17:8081/prod-api/login
+[2024-12-31 17:57:15,868][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2024-12-31 17:57:15,868][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+[2024-12-31 17:57:15,868][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2024-12-31 17:57:15,868][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2024-12-31 17:57:15,868][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "username": "admin",
+    "password": "admin123",
+    "uuid": "3f580c31d49c4f8cab1636187cc50157"
+}
+[2024-12-31 17:57:15,869][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2024-12-31 17:57:15,869][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
